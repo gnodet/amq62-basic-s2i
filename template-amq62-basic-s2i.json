@@ -91,9 +91,11 @@
             "kind": "Service",
             "apiVersion": "v1",
             "spec": {
+				"type": "NodePort",
                 "ports": [
                     {
                         "port": 61616,
+                        "nodePort": 61616,
                         "targetPort": 61616
                     }
                 ],
@@ -139,7 +141,7 @@
                         "containers": [
                             {
                                 "name": "${APPLICATION_NAME}-amq-a",
-                                "image": "172.30.52.94:5000/broker/amq62-basic-s2i",
+                                "image": "172.30.1.1:5000/broker/amq62-basic-s2i",
                                 "imagePullPolicy": "Always",
                                 "readinessProbe": {
                                     "exec": {
