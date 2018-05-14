@@ -95,7 +95,7 @@
                 "ports": [
                     {
                         "port": 61616,
-                        "nodePort": 61616,
+                        "nodePort": 6616,
                         "targetPort": 61616
                     }
                 ],
