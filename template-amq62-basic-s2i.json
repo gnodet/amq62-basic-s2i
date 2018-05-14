@@ -91,11 +91,9 @@
             "kind": "Service",
             "apiVersion": "v1",
             "spec": {
-				"type": "NodePort",
                 "ports": [
                     {
                         "port": 61616,
-                        "nodePort": 6616,
                         "targetPort": 61616
                     }
                 ],
